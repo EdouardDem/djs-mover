@@ -1,0 +1,30 @@
+{
+  "name": "djs-mover",
+  "description": "A javascript library to move and replace HTML elements",
+  "main": [
+    "dist/djs-mover.js",
+    "dist/djs-mover.min.js"
+  ],
+  "authors": [
+    "Edouard Demotes-Mainard"
+  ],
+  "license": "https://opensource.org/licenses/BSD-2-Clause",
+  "keywords": [
+    "responsive",
+    "resize",
+    "callback"
+  ],
+  "homepage": "https://github.com/EdouardDem/djs-mover",
+  "moduleType": [
+    "globals"
+  ],
+  "dependencies": {
+    "jquery": "^2.0.0"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}

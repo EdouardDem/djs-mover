@@ -1,2 +1,3 @@
 # djs-mover
-A javascript library to move HTML elements
+
+A javascript library to move and replace HTML elements
