@@ -44,6 +44,10 @@ djs.mover = {
         if ($destination.length==0) return this;
         if (position==null) return this;
 
+        // Handle only one element
+        $element = $element.first();
+        $destination = $destination.first();
+
         // Create an uniq identifier for this movement
         var phId = this._getNewId();
 
@@ -104,7 +108,7 @@ djs.mover = {
         this._autoIncrement++;
 
         // Return uniq id
-        return this._namespace+'_'+this._autoIncrement;
+        return this._namespace+'-'+this._autoIncrement;
     }
 };
 

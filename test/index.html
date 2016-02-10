@@ -1,0 +1,93 @@
+<html>
+<head>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/djs-mover.js"></script>
+    <script type="text/javascript" src="simple.js"></script>
+    <style>
+        .results,
+        .cnt {
+            max-width: 1000px;
+            background: #eee;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .initial {
+            width: 45%;
+            float: left;
+        }
+        .final {
+            width: 45%;
+            float: right;
+        }
+        .test {
+            margin-bottom: 20px;
+        }
+        .test:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .move {
+            padding: 20px;
+            background: #299fe4;
+        }
+        .destination {
+            padding: 20px;
+            background: #e42b4a;
+        }
+    </style>
+</head>
+</html>
+<body>
+    <div class="cnt">
+        <button onclick="move();" id="move">Move</button>
+        <button onclick="replace();" id="replace" disabled="disabled">Replace</button>
+    </div>
+    <div class="cnt">
+
+        <div class="test">
+            <div class="initial">
+                <div class="move append">Append</div>
+            </div>
+            <div class="final">
+                <div class="destination append"><span>Destination append</span></div>
+            </div>
+        </div>
+
+        <div class="test">
+            <div class="initial">
+                <div class="move prepend">Prepend</div>
+            </div>
+            <div class="final">
+                <div class="destination prepend"><span>Destination prepend</span></div>
+            </div>
+        </div>
+
+        <div class="test">
+            <div class="initial">
+                <div class="move before">Before</div>
+            </div>
+            <div class="final">
+                <div class="destination before"><span>Destination before</span></div>
+            </div>
+        </div>
+
+        <div class="test">
+            <div class="initial">
+                <div class="move after">After</div>
+            </div>
+            <div class="final">
+                <div class="destination after"><span>Destination after</span></div>
+            </div>
+        </div>
+
+
+    </div>
+    <pre class="results">
+    </pre>
+</body>
