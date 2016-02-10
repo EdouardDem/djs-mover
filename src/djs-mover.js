@@ -39,7 +39,7 @@ djs.mover = {
      */
     move: function($element, $destination, position) {
 
-        // Check the arguements validity
+        // Check the arguments validity
         if ($element.length==0) return this;
         if ($destination.length==0) return this;
         if (position==null) return this;
@@ -48,10 +48,10 @@ djs.mover = {
         $element = $element.first();
         $destination = $destination.first();
 
-        // Create an uniq identifier for this movement
+        // Create an unique identifier for this movement
         var phId = this._getNewId();
 
-        // Add a placeholder with an uniq id after the element
+        // Add a placeholder with an unique id after the element
         var ph = '<div style="display: none;" djs-mover-id="'+phId+'"></div>';
         $element.after(ph);
 
@@ -98,7 +98,7 @@ djs.mover = {
         return this;
     },
     /**
-     * Return an uniq identifier based on auto-increment
+     * Return an unique identifier based on auto-increment
      *
      * @return {String}
      */
@@ -107,7 +107,7 @@ djs.mover = {
         // Increment counter
         this._autoIncrement++;
 
-        // Return uniq id
+        // Return unique id
         return this._namespace+'-'+this._autoIncrement;
     }
 };
